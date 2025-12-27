@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0B91FF;
     --foreground: #ededed;
   }
 }
@@ -166,5 +166,47 @@ a {
   font-weight: 600;
   cursor: pointer;
 }
+.scroll-section {
+  background-color: #fff; /* white background */
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.scroll-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.scroll-row {
+  display: flex;
+  align-items: center;
+  gap: 3rem; /* spacing between image and text */
+  flex-wrap: wrap; /* responsive: stacks on small screens */
+}
+
+.scroll-image {
+  flex: 1 1 40%; /* image takes ~40% width */
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-text {
+  flex: 1 1 55%; /* text takes ~55% width */
+}
+
+.scroll-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.scroll-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
 
 
