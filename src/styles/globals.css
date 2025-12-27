@@ -46,29 +46,52 @@ a {
 }
 
 .hero {
-  position:absolute;
+  position:relative;
   width: 106%;
-  height: 80vh; /* 80% of viewport height */
+  min-height: 80vh; /* 80% of viewport height */
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .hero-bg {
-  position:fixed;
-  top: 80px;     /* moves image down */
+  position:absolute;
+  top: 55;     /* moves image down */
   left: 290;
-  right:40;
-  bottom: 40;
-  z-index:1;
+  right:80;
+  bottom:0;
+  z-index:0;
   
 
 }
+.font-jsMath {
+  font-family: 'jsMath-cmbx10', serif; /* fallback to serif */
+  font-weight: normal; /* adjust if needed */
+  font-size: 1.2rem;   /* optional: adjust button size */
+}
 
+.hero-content p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+.hero-content h1 {
+  
+  font-size: 2.5rem; /* Increase heading size */
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Increase paragraph size */
+  margin-bottom: 0rem;
+}
 
 .hero-content {
   position: relative;
   z-index: 1; /* ensures text is above image */
   color: white; /* make text visible on image */
-  padding: 12rem;
+  max-width: 420px;
+
+  margin-left: 10rem;   /* keeps content on the left */
+  margin-top: 9rem;  
 }  
 .navbar {
   position: absolute;

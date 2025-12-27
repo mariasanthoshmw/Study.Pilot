@@ -1,7 +1,7 @@
 import Image from "next/image";
 import myImage from "./public/Group 34.png";
 import logo from "./public/logo.png";
-import { Alfa_Slab_One, Poppins } from "next/font/google";
+import { Alfa_Slab_One, Poppins, Alegreya } from "next/font/google";
 const alfaSlab = Alfa_Slab_One({
   weight: "400",
   subsets: ["latin"],
@@ -11,7 +11,10 @@ const poppins = Poppins({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
 });
-
+const alegreya = Alegreya({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
@@ -33,7 +36,7 @@ export default function Home() {
         <span></span>
       </div>
 
-      <button className="login-btn">LOGIN</button>
+      <button className="login-btn font-jsMath">LOGIN</button>
     </nav>
 
       {/* Content on top */}
@@ -43,14 +46,14 @@ export default function Home() {
          Boost Your <br /> Child’s Future
        </h1>
 
-        <p>
+        <p className={alegreya.className}>
           Unlocking potential. Your partner in 
         </p>
-        <p>
+        <p className={alegreya.className}>
           cultivating your child’s
           educational journey.
         </p>
-        <button className="getStarted-btn">GET STARTED </button>
+       <button className="getStarted-btn font-jsMath">GET STARTED</button>
         
       </div>
     </section>
