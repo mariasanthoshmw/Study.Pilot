@@ -41,14 +41,15 @@ a {
   }
 }
 .hero-image {
-  width: 520px;
-  margin-top: 60px; /* moves image down */
+  width: 620px;
+  margin-top: 60px;
+  margin-bottom: 80; /* moves image down */
 }
 
 .hero {
   position:relative;
-  width: 106%;
-  min-height: 80vh; /* 80% of viewport height */
+  width: 100%;
+  min-height: 70vh; /* 80% of viewport height */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -56,11 +57,10 @@ a {
 
 .hero-bg {
   position:absolute;
-  top: 55;     /* moves image down */
+  top: 60;     /* moves image down */
   left: 290;
   right:80;
   bottom:0;
-  z-index:0;
   
 
 }
@@ -80,7 +80,7 @@ a {
 }
 
 .hero-content p {
-  font-size: 1.5rem; /* Increase paragraph size */
+  font-size: 22px; /* Increase paragraph size */
   margin-bottom: 0rem;
 }
 
@@ -166,47 +166,110 @@ a {
   font-weight: 600;
   cursor: pointer;
 }
+/* Scroll section container */
 .scroll-section {
-  background-color: #fff; /* white background */
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
+  background-color: #ffffff;
+  padding: 90px 10px;
+  min-height: 50vh;
+  margin-top: 120px; /* 🔹 THIS pushes the white section down */
 }
 
-.scroll-content {
-  max-width: 1200px;
-  width: 100%;
-}
-
+/* Layout */
 .scroll-row {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 3rem; /* spacing between image and text */
-  flex-wrap: wrap; /* responsive: stacks on small screens */
+  gap: 60px;
 }
 
-.scroll-image {
-  flex: 1 1 40%; /* image takes ~40% width */
-  display: flex;
-  justify-content: center;
+/* Image */
+.scroll-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px; /* moves dog image down */
 }
 
+
+/* Text block */
 .scroll-text {
-  flex: 1 1 55%; /* text takes ~55% width */
-}
-
-.scroll-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.scroll-text p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  max-width: 520px;
+  text-align: center;   /* centers all text */
 }
 
 
+/* BLUE heading (matches image) */
+.scroll-heading {
+  color: #1a8cff; /* soft educational blue */
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
 
+/* Paragraph exactly like image */
+.scroll-para {
+  color: #444444;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* Scroll section 3 */
+/* Scroll section 3 */
+.scroll3-section {
+  background-color: #F3C057;
+  padding: 120px 20px 180px; /* bottom padding for clouds */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Layout */
+.scroll3-row {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Text */
+.scroll3-text {
+  max-width: 480px;
+}
+
+.scroll3-heading {
+  color: black;
+  font-size: 36px;
+  margin-bottom: 24px;
+  text-align: center;
+
+}
+
+.scroll3-para {
+  color:black;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  margin-left: 30;
+}
+
+/* Image */
+.scroll3-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clouds */
+.clouds {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 2;
+}
+
+.clouds img {
+  object-fit: cover;
+}
