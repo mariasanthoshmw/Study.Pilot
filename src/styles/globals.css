@@ -45,25 +45,30 @@ a {
   margin-top: 60px;
   margin-bottom: 80; /* moves image down */
 }
-
 .hero {
-  position:relative;
+  position: relative;
   width: 100%;
-  min-height: 70vh; /* 80% of viewport height */
-  overflow: hidden;
+  min-height: 90vh;
+  overflow: visible;   /* ✅ change from hidden */
   display: flex;
   align-items: center;
+
 }
 
 .hero-bg {
-  position:absolute;
-  top: 60;     /* moves image down */
-  left: 290;
-  right:80;
-  bottom:0;
-  
+  position: absolute;
+  top: 90px;
+  left: 290px;
+  right: 80px;
+  bottom: 0;
+}
+.hero-bg img {
+  object-fit: contain;   /* keeps proportions */
+  transform: scale(1.25) translateY(-20px);/* 🔹 increase size */
+  transform-origin: center;
 
 }
+
 .font-jsMath {
   font-family: 'jsMath-cmbx10', serif; /* fallback to serif */
   font-weight: normal; /* adjust if needed */
@@ -171,8 +176,9 @@ a {
   background-color: #ffffff;
   padding: 90px 10px;
   min-height: 50vh;
-  margin-top: 120px; /* 🔹 THIS pushes the white section down */
+  margin-top: 0;   /* ✅ FIX */
 }
+
 
 /* Layout */
 .scroll-row {
